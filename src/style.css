@@ -135,4 +135,28 @@ nav > div:first-child {
   
   .slider.round:before {
     border-radius: 50%;
-  } 
+  } /* FOOTER */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #f8f9fa;  /* Light background */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);  
+    user-select: none;
+}
+
+#footerIcon {
+    height: 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#footerIcon:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
