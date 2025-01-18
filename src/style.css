@@ -257,3 +257,7 @@ footer {
     visibility: hidden;
     pointer-events: none;
 }
+
+.extra-hidden {
+    display: none;
+}

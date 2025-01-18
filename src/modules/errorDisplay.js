@@ -1,5 +1,7 @@
 function displayError(message) {
     const errorMessage = document.querySelector('#error-message');
+    errorMessage.classList.remove("extra-hidden");
+
     errorMessage.textContent = message;
     errorMessage.classList.remove('hidden');
 
