@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script> <!-- Icons for different weather -->
+        <title>Weather App</title>
+    <link rel="icon" href="favicon.ico"><script defer src="main.js"></script></head>
+    <body>
+        <!-- NAVIGATION -->
+        <nav>
+            <div class="search-container">
+                <i class="fa fa-search" id="citySearchIcon"></i>
+                <input type="search" id="citySearch" placeholder="Search city...">
+            </div>
+
+            <div class="unit-switch">
+                <div>C°</div>
+                <label class="switch">
+                    <input type="checkbox" id="unitToggle">
+                    <span class="slider round"></span>
+                </label>
+                <div>F°</div>
+            </div>
+        </nav>
+
+        <div id="weatherCardContainer">
+            <div id="weatherCard">
+                <div id="weatherCardTitle" class="weather-card-title">Find the current weather info!</div>
+                <div id="weatherCardInfoContainer">
+                    <div id="weatherCardInfo">
+                        <div id="weatherCardTemperature">Hi!</div>
+                        <div id="weatherCardWeather">Welcome</div>
+                        <div id="weatherCardExtremes">You can press Enter or the Search Icon</div>
+                    </div>
+                    <i id="weatherCardIcon" class="ph ph-sun"></i>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>Made by Kristijan</div>
+            <img src="8e2a9e7d53fa4340a09e.png" alt="Footer GitHub Icon with link" id="footerIcon">
+        </footer>
+
+        <div id="error-message" class="error-message hidden extra-hidden"></div>
+    </body>
+</html>
