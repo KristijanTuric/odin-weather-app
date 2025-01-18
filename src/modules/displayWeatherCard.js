@@ -3,11 +3,13 @@ function displayWeather(info) {
     const weatherCardTemperature = document.getElementById("weatherCardTemperature");
     const weatherCardWeather = document.getElementById("weatherCardWeather");
     const weatherCardIcon = document.getElementById("weatherCardIcon");
+    const weatherCardExtremes = document.getElementById("weatherCardExtremes");
 
     weatherCardTitle.textContent = info["address"];
     weatherCardTemperature.textContent = Math.round(info["temp"]) + "°C";
     weatherCardWeather.textContent = info["conditions"];
     weatherCardIcon.className = getIconClass(info["icon"]);
+    weatherCardExtremes.textContent = `Feels like ${Math.round(info["tempFeelsLike"])}°C`
 }
 
 // Returns the class of the icon

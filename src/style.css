@@ -185,7 +185,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
 }
 
 #weatherCardTemperature {
@@ -196,6 +196,7 @@ input:checked + .slider:before {
 #weatherCardWeather {
     font-size: 32px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 #weatherCardIcon {
