@@ -11,7 +11,7 @@
         <!-- NAVIGATION -->
         <nav>
             <div class="search-container">
-                <i class="fa fa-search"></i>
+                <i class="fa fa-search" id="citySearchIcon"></i>
                 <input type="search" id="citySearch" placeholder="Search city...">
             </div>
 
@@ -27,14 +27,14 @@
 
         <div id="weatherCardContainer">
             <div id="weatherCard">
-                <div class="weather-card-title">Kapelica, Bjelovarsko-bilogorska, Croatia</div>
+                <div id="weatherCardTitle" class="weather-card-title">City</div>
                 <div id="weatherCardInfoContainer">
                     <div id="weatherCardInfo">
-                        <div id="weatherCardTemperature">-1°C</div>
-                        <div id="weatherCardWeather">Snow</div>
-                        <div id="weatherCardExtremes">Day 0°C Night -4°C</div>
+                        <div id="weatherCardTemperature">T°C</div>
+                        <div id="weatherCardWeather">Conditions</div>
+                        <div id="weatherCardExtremes">Day T°C Night T°C</div>
                     </div>
-                    <i id="weatherCardImage" class="ph ph-cloud-rain"></i>
+                    <i id="weatherCardIcon" class="ph ph-sun"></i>
                 </div>
             </div>
         </div>

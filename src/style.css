@@ -41,15 +41,8 @@ nav > div:first-child {
 /* SEARCH Input with ICON */
 .search-container {
     position: relative;
-    display: inline-block;
-}
-
-.search-container i {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #aaa;
+    display: inline-flex;
+    align-items: center;
 }
 
 #citySearch {
@@ -68,6 +61,24 @@ nav > div:first-child {
 #citySearch:focus {
     border-color: #ff7043;
     box-shadow: 0 0 8px #ff7043;
+}
+
+#citySearchIcon {
+    cursor: pointer;
+    margin: 0; /* Remove unwanted movement caused by margins */
+    transition: transform 0.2s ease-in-out; /* Smooth scaling */
+    font-size: 20px;
+    line-height: 1;
+    position: absolute; /* Ensure it follows the same positioning */
+    left: 10px; /* Same as .search-container i */
+    top: 50%;
+    transform: translateY(-50%); /* Align vertically */
+    color: #aaa; /* Maintain the same color */
+}
+
+#citySearchIcon:hover {
+    transform: translateY(-50%) scale(1.1); /* Combine translateY with scale */
+    color: #000; /* Optionally, change color on hover for better visibility */
 }
 
 /* Temperature unit TOGGLE */
@@ -187,8 +198,9 @@ input:checked + .slider:before {
     font-weight: bold;
 }
 
-#weatherCardImage {
-    margin-right: 150px;
+#weatherCardIcon {
+    margin-right: 120px;
+    margin-bottom: 65px;
     scale: 5;
 }
 
