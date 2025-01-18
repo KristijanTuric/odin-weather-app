@@ -164,7 +164,7 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     width: 40vw;
-    height: 300px;
+    height: auto;
     background: #fff; /* White card background */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), inset 0 5px 10px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
@@ -178,14 +178,15 @@ input:checked + .slider:before {
     font-size: x-large;
     margin-bottom: 10px;
     padding: 10px 0px 10px 20px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    text-transform: capitalize;
 }
 
 #weatherCardInfoContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px 5px 15px;
+    padding: 15px 15px 10px 15px;
 }
 
 #weatherCardTemperature {
