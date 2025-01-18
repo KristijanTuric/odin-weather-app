@@ -27,7 +27,7 @@ cityInputSearchIcon.addEventListener("click", async() => {
 // Gets data, displays it and clears the city input
 async function searchCityWeather(city) {
     let currentWeather = await getCurrentWeatherData(city.value, isMetric);
-    displayWeather(currentWeather);
+    displayWeather(currentWeather, isMetric);
     cityInput.value = "";
 }
 
