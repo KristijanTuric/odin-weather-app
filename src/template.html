@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script> <!-- Icons for different weather -->
         <title>Weather App</title>
     </head>
     <body>
@@ -23,6 +24,20 @@
                 <div>F°</div>
             </div>
         </nav>
+
+        <div id="weatherCardContainer">
+            <div id="weatherCard">
+                <div class="weather-card-title">Kapelica, Bjelovarsko-bilogorska, Croatia</div>
+                <div id="weatherCardInfoContainer">
+                    <div id="weatherCardInfo">
+                        <div id="weatherCardTemperature">-1°C</div>
+                        <div id="weatherCardWeather">Snow</div>
+                        <div id="weatherCardExtremes">Day 0°C Night -4°C</div>
+                    </div>
+                    <i id="weatherCardImage" class="ph ph-cloud-rain"></i>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <div>Made by Kristijan</div>
