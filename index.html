@@ -26,6 +26,26 @@
         </nav>
 
         <div id="weatherCardContainer">
+            <div id="loading-spinner"></div>
+
+            <div id="weatherCard">
+                <div>
+                    <div id="weatherCardTitle" class="weather-card-title">Search a city!</div>
+                    <div id="weatherCardCurrentDate"></div>
+                </div>
+                <div id="weatherCardInformation">
+                    <div id="weatherCardTempContainer">
+                        <i id="weatherCardIcon" class="ph ph-sun"></i>
+                        <div>
+                            <div id="weatherCardTemperature">Enter</div>
+                            <div id="weatherCardExtremes">or the Search Icon</div>
+                        </div>
+                    </div>
+                    <div id="weatherCardWeather">Have a try!</div>
+                </div>
+            </div>
+
+            <!--
             <div id="weatherCard">
                 <div id="weatherCardTitle" class="weather-card-title">Find the current weather info!</div>
                 <div id="weatherCardInfoContainer">
@@ -37,11 +57,12 @@
                     <i id="weatherCardIcon" class="ph ph-sun"></i>
                 </div>
             </div>
+            -->
         </div>
 
         <footer>
             <div>Made by Kristijan</div>
-            <img src="8e2a9e7d53fa4340a09e.png" alt="Footer GitHub Icon with link" id="footerIcon">
+            <i id="footerIcon" class="ph ph-github-logo"></i>
         </footer>
 
         <div id="error-message" class="error-message hidden extra-hidden"></div>
