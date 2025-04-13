@@ -28,7 +28,6 @@ cityInputSearchIcon.addEventListener("click", async() => {
 async function searchCityWeather(city) {
     let currentWeather = await getCurrentWeatherData(city.value, isMetric);
     displayWeather(currentWeather, isMetric);
-    cityInput.value = "";
 }
 
 // Unit toggle
@@ -36,9 +35,11 @@ unitToggle.addEventListener("change", () => {
     // It is set to Celsius
     if (!unitToggle.checked) {
         isMetric = true;
+        cityInputSearchIcon.click();
     }
     // It is set to Fahrenheit
     else {
         isMetric = false;
+        cityInputSearchIcon.click();
     }
 });
