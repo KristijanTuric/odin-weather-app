@@ -47,14 +47,19 @@ async function searchCityWeather(city) {
 
 // Unit toggle
 unitToggle.addEventListener("change", async() => {
-    // It is set to Celsius
-    if (!unitToggle.checked) {
-        isMetric = true;
-        await searchCityWeather(lastCity);
-    }
-    // It is set to Fahrenheit
-    else {
-        isMetric = false;
-        await searchCityWeather(lastCity);
+    if (lastCity == "" && cityInput.value == "") {
+        if (!unitToggle.checked) isMetric = true;
+        else isMetric = false;
+    } else {
+        // It is set to Celsius
+        if (!unitToggle.checked) {
+            isMetric = true;
+            await searchCityWeather(lastCity);
+        }
+        // It is set to Fahrenheit
+        else {
+            isMetric = false;
+            await searchCityWeather(lastCity);
+        }
     }
 });
