@@ -25,9 +25,10 @@ nav {
     position: relative;
     height: 100px;
     min-height: 100px;
-    color: #fff;
     padding: 10px 20px;
-    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+
+    background-color: #1f2227;
+    color: #f0f0f0;
 }
 
 nav > div:first-child {
@@ -157,53 +158,73 @@ input:checked + .slider:before {
     display: flex; 
     justify-content: center; 
     align-items: center;
-    background-image: radial-gradient(#80deea, #e0f7fa);
+    background: linear-gradient(145deg, #101214, #1e2228);
 }
 
 #weatherCard {
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    height: auto;
-    background: #fff; /* White card background */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), inset 0 5px 10px rgba(255, 255, 255, 0.5);
+    width: 25vw;
+    background: #181b1f;
+    color: #dbdbdb;
     border-radius: 10px;
     margin-bottom: 100px;
-
-    transition: box-shadow 0.5s ease-in-out;
+    padding: 15px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 .weather-card-title {
     font-weight: bold;
-    font-size: xx-large;
-    margin-bottom: 10px;
-    padding: 10px 0px 10px 20px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 42px;
     text-transform: capitalize;
 }
 
-#weatherCardInfoContainer {
+#weatherCardCurrentDate {
+    margin-top: -10px;
+    color: gray;
+}
+
+#weatherCardInformation {
+    margin-top: 8px;
     display: flex;
+    flex-direction: column;
+}
+
+#weatherCardTempContainer {
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px 10px 15px;
-}
-
-#weatherCardTemperature {
-    font-weight: bold;
-    font-size: 64px;
-}
-
-#weatherCardWeather {
-    font-size: 32px;
-    font-weight: bold;
+    gap: 10px;
+    position: relative;
+    margin-top: 4px;
     margin-bottom: 10px;
 }
 
 #weatherCardIcon {
-    margin-right: 120px;
-    margin-bottom: 65px;
-    scale: 5;
+    font-size: 64px; /* Adjust icon size as needed */
+}
+
+#weatherCardTempContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}  
+
+#weatherCardTemperature {
+    font-size: 48px;
+}
+
+#weatherCardExtremes {
+    font-size: 14px;
+    margin-top: -15px;
+    color: gray;
+    translate: 20px 0px;
+}
+
+#weatherCardWeather {
+    margin-top: 15px;
+    text-align: center;
 }
 
 
@@ -217,14 +238,16 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    background-color: #f8f9fa;  /* Light background */
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);  
+    background-color: #111315;
+    color: #888;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     user-select: none;
 }
 
 #footerIcon {
-    height: 30px;
-    border-radius: 30px;
+    font-size: x-large;
+    color: white;
+    border-radius: 50%;
     transition: background-color 0.3s ease;
 }
 
