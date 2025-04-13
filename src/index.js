@@ -13,7 +13,14 @@ let isMetric = !unitToggle.checked;
 const cityInput = document.getElementById("citySearch");
 const cityInputSearchIcon = document.getElementById("citySearchIcon");
 const weatherCard = document.getElementById("weatherCard");
+const currentDateDisplay = document.getElementById("weatherCardCurrentDate");
+
+const today = new Date();
+const options = {year: 'numeric', month: 'long', day: 'numeric' };
+const formattedDate = today.toLocaleDateString(undefined, options);
 let lastCity = "";
+
+currentDateDisplay.textContent = formattedDate;
 
 cityInput.addEventListener("keydown", async(event) => {
     if (event.key === "Enter") {
