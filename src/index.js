@@ -1,6 +1,5 @@
 import "./style.css";
 import { typePlaceholder } from "./modules/animatedInput";
-import footerIcon from "./modules/footerLink";
 import { getCurrentWeatherData } from "./modules/weatherAPI";
 import { displayWeather } from "./modules/displayWeatherCard";
 
@@ -24,7 +23,7 @@ cityInput.addEventListener("keydown", async(event) => {
 })
 
 cityInputSearchIcon.addEventListener("click", async() => {
-    lastCity.value = cityInput;
+    lastCity = cityInput.value;
     await searchCityWeather(cityInput.value);
 });
 
